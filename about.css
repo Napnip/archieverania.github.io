@@ -1,0 +1,94 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    nav {
+      height: 80px;
+      background: #F5F5DC;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 calc((100vw - 1300px) / 2);
+      position: relative;
+    }
+
+    nav::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #8B4513;
+    }
+
+    .logo {
+      padding: 0 2rem;
+    }
+
+    .logo img {
+      width: 125px;
+      height: auto;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #8B4513;
+      padding: 0 1.5rem;
+    }
+
+    nav a:hover {
+      color: #D2B48C;
+    }
+
+    .bg {
+      background: #F5F5DC;
+    }
+
+   .bg-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 60vh;
+  padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.container {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.container h2 {
+  color: #8B4513;
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+/* Add new styles for the curved pictures on the left */
+/* Add new styles for the curved pictures on the left */
+.left-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 8px 8px 0;
+  height: 100%; /* Ensure the image takes up the full height of the container */
+}
+
+.left-image img {
+  width: 100%;
+  height: 100%; /* Make sure the image takes up the full height of the container */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  border-radius: 0 8px 8px 0;
+}
+
+
+/* Update the existing styles for the right side text */
+.right-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
